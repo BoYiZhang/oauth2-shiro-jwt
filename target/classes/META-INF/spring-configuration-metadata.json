@@ -1,0 +1,60 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.askerlve.ums.web.config.DataSourceConfig",
+      "name": "spring.datasource",
+      "sourceMethod": "datasource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties",
+      "name": "ums.security.oauth2",
+      "type": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2Properties",
+      "name": "ums.security.oauth2",
+      "type": "com.askerlve.ums.web.oauth2.properties.OAuth2Properties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties",
+      "defaultValue": 7200,
+      "name": "ums.security.oauth2.access-token-validity-seconds",
+      "description": "token有效时间",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties",
+      "name": "ums.security.oauth2.client-id",
+      "description": "客户端id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties",
+      "name": "ums.security.oauth2.client-secret",
+      "description": "客户端密码",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2Properties",
+      "defaultValue": [],
+      "name": "ums.security.oauth2.clients",
+      "type": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties[]"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2Properties",
+      "defaultValue": "defaltjwtsignkey",
+      "name": "ums.security.oauth2.jwt-signing-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.askerlve.ums.web.oauth2.properties.OAuth2ClientProperties",
+      "name": "ums.security.oauth2.refresh-token-expire-seconds",
+      "description": "刷新token过期时间",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
